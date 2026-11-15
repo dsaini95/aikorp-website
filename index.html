@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Korp: free tools for Windows, Microsoft 365 and Active Directory admins</title>
+  <meta name="description" content="Free PowerShell scripts and Windows tools for IT admins: M365 reports, AD cleanup, onboarding automation and LaptopDoctor." />
+  <meta property="og:title" content="AI Korp: free tools for IT admins" />
+  <meta property="og:description" content="Free PowerShell scripts and Windows tools for M365 and Active Directory admins." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.aikorp.in/" />
+  <link rel="canonical" href="https://www.aikorp.in/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23012456'/><path d='M8 10l7 6-7 6' stroke='%23FFE36E' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M17 22h7' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a href="/" class="brand" aria-label="AI Korp home">
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#012456"/><path d="M8 10l7 6-7 6" stroke="#FFE36E" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 22h7" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+        <span>AI Korp</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#tools">Tools</a>
+        <a href="#laptopdoctor">LaptopDoctor</a>
+        <a href="#guides">Guides</a>
+        <a href="#about">About</a>
+      </nav>
+      <a href="#tools" class="btn btn-solid header-cta">Get the free tools</a>
+      <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Free tools for the people who keep Windows and Microsoft&nbsp;365 running.</h1>
+          <p class="hero-sub">PowerShell scripts and Windows utilities written by a working sysadmin. Download them, read the code, run them in your own tenant. No licence fees.</p>
+          <div class="hero-actions">
+            <a href="#tools" class="btn btn-yellow">Browse the tools</a>
+            <a href="#laptopdoctor" class="btn btn-line">See LaptopDoctor</a>
+          </div>
+          <p class="hero-note">Works with M365, Entra ID, Exchange Online, Active Directory and Windows 10/11.</p>
+        </div>
+
+        <div class="console" role="img" aria-label="A PowerShell window running the AI Korp inactive user report">
+          <div class="console-bar">
+            <span class="console-title">Administrator: Windows PowerShell</span>
+            <span class="console-ctrls" aria-hidden="true"><i></i><i></i><i></i></span>
+          </div>
+          <pre class="console-body" id="console" aria-hidden="true"></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools catalogue -->
+    <section id="tools" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The tools</h2>
+          <p>Every tool is free. You'll get the download link after you leave your email, so I can tell you when a tool is updated.</p>
+        </div>
+        <div class="catalog" role="table" aria-label="Free tools">
+          <div class="catalog-row catalog-head" role="row">
+            <span role="columnheader">Tool</span>
+            <span role="columnheader">Requires</span>
+            <span role="columnheader"><span class="sr-only">Action</span></span>
+          </div>
+          <div id="catalog"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LaptopDoctor -->
+    <section id="laptopdoctor" class="section ld">
+      <div class="wrap ld-grid">
+        <div class="ld-copy">
+          <h2>LaptopDoctor</h2>
+          <p class="ld-lead">A health check for Windows laptops that tells you what's wrong in plain language, then fixes it.</p>
+          <ul class="ld-list">
+            <li><strong>Battery wear</strong> compared with its original design capacity</li>
+            <li><strong>Disk health and space</strong>, plus one-click cleanup of temp and update files</li>
+            <li><strong>Startup apps</strong> that slow down boot, ranked by impact</li>
+            <li><strong>Drivers and Windows Update</strong> status, with failed updates flagged</li>
+            <li><strong>A report</strong> you can save and send to your helpdesk</li>
+          </ul>
+          <div class="ld-actions">
+            <button class="btn btn-solid" data-download="laptopdoctor">Download LaptopDoctor</button>
+            <span class="muted">Free · Windows 10 and 11</span>
+          </div>
+        </div>
+
+        <div class="app" aria-hidden="true">
+          <div class="app-bar"><span>LaptopDoctor</span><span class="app-ctrls"><i></i><i></i><i></i></span></div>
+          <div class="app-body">
+            <div class="score">
+              <svg viewBox="0 0 120 120" class="ring"><circle cx="60" cy="60" r="50" class="ring-bg"/><circle cx="60" cy="60" r="50" class="ring-fg" pathLength="100"/></svg>
+              <div class="score-num"><b>82</b><span>Health score</span></div>
+            </div>
+            <ul class="checks">
+              <li class="ok"><span>Battery</span><em>91% of design capacity</em></li>
+              <li class="warn"><span>Disk C:</span><em>8.2 GB free, cleanup available</em></li>
+              <li class="warn"><span>Startup</span><em>6 apps slowing boot</em></li>
+              <li class="ok"><span>Drivers</span><em>Up to date</em></li>
+              <li class="ok"><span>Windows Update</span><em>No failed updates</em></li>
+            </ul>
+            <div class="app-fix">Fix 2 issues</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guides -->
+    <section id="guides" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Guides</h2>
+          <p>Short, tested walkthroughs for jobs that come up every week.</p>
+        </div>
+        <div class="guides">
+          <a class="guide guide-feature" href="guides/find-inactive-m365-users.html">
+            <span class="guide-meta">Microsoft 365 · 6 min read</span>
+            <h3>Find inactive Microsoft 365 users and reclaim their licences</h3>
+            <p>Use Microsoft Graph PowerShell to list everyone who hasn't signed in for 90 days, see what licences they hold, and export it for your manager.</p>
+            <span class="guide-link">Read the guide</span>
+          </a>
+          <div class="guide guide-soon">
+            <span class="guide-meta">Active Directory · Coming soon</span>
+            <h3>Clean up stale computer accounts without breaking anything</h3>
+          </div>
+          <div class="guide guide-soon">
+            <span class="guide-meta">Exchange Online · Coming soon</span>
+            <h3>Spot mailboxes forwarding mail outside your organisation</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="wrap about-grid">
+        <h2>Built by an admin, for admins</h2>
+        <div class="about-copy">
+          <p>I've spent 8 years in IT, working across Active Directory, Microsoft 365 administration and PowerShell automation. Most of these tools started as scripts I wrote to stop doing the same job by hand.</p>
+          <p>AI Korp is where I clean them up, document them and give them away. Every script is plain PowerShell you can read before you run it. Nothing phones home.</p>
+          <dl class="facts">
+            <div><dt>8 years</dt><dd>in enterprise IT</dd></div>
+            <div><dt>AD · M365 · PowerShell</dt><dd>daily stack</dd></div>
+            <div><dt>Free</dt><dd>every tool on this site</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup -->
+    <section class="signup">
+      <div class="wrap signup-grid">
+        <div>
+          <h2>Get new scripts by email</h2>
+          <p>One short email when a new tool or guide is published. Unsubscribe any time.</p>
+        </div>
+        <form class="signup-form" id="signupForm">
+          <label class="sr-only" for="signupEmail">Email address</label>
+          <input id="signupEmail" name="email" type="email" required placeholder="you@company.com" autocomplete="email" />
+          <button class="btn btn-yellow" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a href="/" class="brand brand-light"><span>AI Korp</span></a>
+        <p>Free tools for Windows, Microsoft 365 and Active Directory admins.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#tools">Tools</a>
+        <a href="#laptopdoctor">LaptopDoctor</a>
+        <a href="#guides">Guides</a>
+        <a data-mail href="#">Contact</a>
+        <a data-linkedin href="#">LinkedIn</a>
+        <a data-github href="#">GitHub</a>
+      </nav>
+      <div class="support" id="support" hidden>
+        <p>If a tool saved you an afternoon, you can buy me a coffee.</p>
+        <a class="btn btn-line-light" id="supportLink" href="#" target="_blank" rel="noopener">Buy me a coffee</a>
+      </div>
+    </div>
+    <div class="wrap fine">
+      <span>© <span id="year"></span> AI Korp, aikorp.in</span>
+      <span>Scripts are provided as-is. Test in a non-production tenant first.</span>
+    </div>
+  </footer>
+
+  <!-- Download dialog -->
+  <dialog class="dlg" id="dlg" aria-labelledby="dlgTitle">
+    <form method="dialog" class="dlg-x"><button aria-label="Close">✕</button></form>
+    <div id="dlgForm">
+      <h3 id="dlgTitle">Download</h3>
+      <p class="muted" id="dlgSummary"></p>
+      <form id="leadForm" class="lead">
+        <label>Name<input name="name" required autocomplete="name" /></label>
+        <label>Work email<input name="email" type="email" required autocomplete="email" /></label>
+        <label class="check"><input type="checkbox" name="updates" checked /> Email me when this tool is updated</label>
+        <button class="btn btn-solid full" type="submit" id="leadBtn">Get the download</button>
+        <p class="error" id="leadErr" hidden></p>
+      </form>
+    </div>
+    <div id="dlgDone" hidden>
+      <h3 id="doneTitle">Your download is ready</h3>
+      <p class="muted" id="doneText"></p>
+      <a class="btn btn-solid full" id="doneLink" href="#" download>Download now</a>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
